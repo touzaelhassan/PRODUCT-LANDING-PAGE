@@ -10,6 +10,11 @@ body {
   direction: rtl;
   height: 1000px;
 }
+
+ul {
+  list-style: none;
+}
+
 .btn {
   border-radius: 0;
 }
@@ -225,5 +230,81 @@ body {
     display: inline;
   }
 }
-
 /* End Features Section */
+
+/* Start PLans Section */
+.plans {
+  padding: 50px 0 60px 0;
+  background-color: #f7f7f7;
+}
+
+.plans__title {
+  margin-bottom: 25px;
+}
+
+.plans__title h3 {
+  text-align: center;
+}
+
+.plans__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.plan__item {
+  padding: 20px;
+  border: 2px solid #ededed;
+  width: 350px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.plan__title {
+  color: #7935b3;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.plan__price {
+  margin: 30px 0;
+  font-size: 40px;
+}
+
+.plan__price span {
+  font-size: 15px;
+  vertical-align: bottom;
+}
+
+.plan__list {
+  margin: 0;
+  padding: 0;
+}
+
+.plan__list li {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+@media screen and (min-width: 768px) {
+  .plans__title {
+    margin-bottom: 50px;
+  }
+  .plans__content {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .plan__item {
+    width: calc(50% - 15px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .plan__item {
+    width: calc(25% - 20px);
+  }
+}
+/* End Plans Section */
