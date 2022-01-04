@@ -308,3 +308,39 @@ ul {
   }
 }
 /* End Plans Section */
+
+/* Start Plans Section */
+.questions {
+  padding: 50px 0;
+}
+
+.questions__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd !important;
+}
+
+.accordion-body {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Start Media Queries */
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+  .questions__content {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .questions__item {
+    width: calc(33% - 20px);
+  }
+}
+/* End Plans Section */
