@@ -344,3 +344,49 @@ ul {
   }
 }
 /* End Plans Section */
+
+/* Start Video Section */
+.video__content {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.video__content video {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video__overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100%;
+  background-color: rgba(130, 77, 178, 0.9);
+}
+
+.video__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.video__icon {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+/* End Video Section */
